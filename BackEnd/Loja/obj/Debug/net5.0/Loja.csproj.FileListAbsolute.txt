@@ -53,3 +53,6 @@ C:\Users\felip\OneDrive\Documentos\GitHub\Projetinhoxd\BackEnd\Loja\obj\Debug\ne
 C:\Users\felip\OneDrive\Documentos\GitHub\Projetinhoxd\BackEnd\Loja\obj\Debug\net5.0\ref\Loja.dll
 C:\Users\felip\OneDrive\Documentos\GitHub\Projetinhoxd\BackEnd\Loja\obj\Debug\net5.0\Loja.pdb
 C:\Users\felip\OneDrive\Documentos\GitHub\Projetinhoxd\BackEnd\Loja\obj\Debug\net5.0\Loja.genruntimeconfig.cache
+C:\Users\felip\OneDrive\Documentos\GitHub\Projetinhoxd\BackEnd\Loja\bin\Debug\net5.0\global.json
+C:\Users\felip\OneDrive\Documentos\GitHub\Projetinhoxd\BackEnd\Loja\bin\Debug\net5.0\Humanizer.dll
+C:\Users\felip\OneDrive\Documentos\GitHub\Projetinhoxd\BackEnd\Loja\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll

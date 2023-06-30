@@ -33,7 +33,7 @@ public class ClientesController : ControllerBase
 
     [HttpPost]
     public async Task<ActionResult<Clientes>> Post([FromBody] Clientes clientes){
-        var newCliente = _clientesRepositories.Create(clientes);
+        var newCliente = await _clientesRepositories.Create(clientes);
         return CreatedAtAction(nameof(GetById), new {id = newCliente.Id}, newCliente);
     }
 

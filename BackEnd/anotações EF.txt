@@ -1,6 +1,7 @@
 - dotnet ef migrations add init -o Data/Migrations
 //comando para gerar o codigo q vai fazer açõs nas tabelas do banco de dados, criar/deletar etc,
 //Data/Migration escole o local que vao ficar salvos
+//precisa do entityframwork tools para funcionar
 
 - dotnet ef database update
 //cria/atualiza o arquivo de banco de dados
