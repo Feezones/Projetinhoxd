@@ -1,0 +1,45 @@
+- dotnet ef migrations add init -o Data/Migrations
+//comando para gerar o codigo q vai fazer açõs nas tabelas do banco de dados, criar/deletar etc,
+//Data/Migration escole o local que vao ficar salvos
+
+- dotnet ef database update
+//cria/atualiza o arquivo de banco de dados
+
+
+---diretivas estruturais
+*ngIf
+*ngFor
+*ngShow
+
+
+--- dotnet new sln -n "nome"
+    cria uma solution para rodar o projeto direto da raiz/ da pasta src ao invez da loja.api
+
+---dotnet new classlib -n "nome".Persistence
+
+---dotnet new classlib -n Loja.Domain
+
+---dotnet new classlib -n Loja.Application
+
+---------
+
+---dotnet sln Loja.sln add Loja.Application
+                            .Domain
+                            .Persistence
+
+    adiciona a referencia ao sln
+
+----------
+
+---dotnet add .\Loja.API.csproj reference .\Loja.Application\
+    cria referencia do Application dentro do Loja.api.csproj
+
+
+---dotnet ef migrations add Initial -p .\Loja.Persistence\ -s .\Loja.API\ 
+    persistence pq é onde esta o context, e o api n sei pq exatamente
+
+
+
+
+
+------VOLTAR A SEÇÃO 5> PROPRIEDADE BNDING PARA VER TRATAMENTO DE IMAGEM
