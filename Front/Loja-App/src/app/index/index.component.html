@@ -1,0 +1,38 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome:</th>
+        <th scope="col">Sobrenome:</th>
+        <th scope="col">CPF:</th>
+        <th scope="col">Email:</th>
+        <th scope="col">Endereço:</th>
+        <th>
+          <input class="form-control me-2" type="search" placeholder="Search" [(ngModel)]="filtroLista" aria-label="Search">
+      </th>
+      </tr>
+    </thead>
+    <tbody *ngIf="clientes && clientes.length">
+      <tr *ngFor="let cliente of clientesFiltrados">
+        <td>{{cliente.id}}</td>
+        <td>{{cliente.nome}}</td>
+        <td>{{cliente.sobrenome}}</td>
+        <td>{{cliente.cpf}}</td>
+        <td>{{cliente.email}}</td>
+        <td>{{cliente.endereco}}</td>
+        <td>
+          <button type="button" class="btn btn-outline-info mr-2">Alterar</button>
+          <button type="button" class="btn btn-outline-danger">Deletar</button>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot *ngIf="!clientes.length">
+      <tr>
+        <td colspan="8" class="text-center">
+          <h4>Nenhum cliente encontrado!</h4>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
