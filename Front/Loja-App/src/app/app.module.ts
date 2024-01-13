@@ -11,6 +11,20 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ModClientesComponent } from './mod-clientes/mod-clientes.component';
 import { IndexComponent } from './index/index.component';
+import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
+
+const routes: Routes = [
+  { path: 'login', component: LoginComponent },
+  { path: 'cadastro', component: CadastroComponent },
+  { path: 'mod-clientes', component: ModClientesComponent },
+  { path: 'clientes', component: ClientesComponent },
+  { path: 'index', component: IndexComponent },
+  { path: '', component: IndexComponent }
+  // outras rotas...
+];
+
 
 @NgModule({
   declarations: [
@@ -19,8 +33,12 @@ import { IndexComponent } from './index/index.component';
     NavbarComponent,
     ModClientesComponent,
     IndexComponent,
+    FooterComponent,
+    LoginComponent,
+    CadastroComponent,
   ],
   imports: [
+    RouterModule.forRoot(routes) ,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -28,6 +46,7 @@ import { IndexComponent } from './index/index.component';
     FormsModule,
     ReactiveFormsModule
   ],
+  exports: [ RouterModule ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,55 @@
+.cadastro-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centralização horizontal */
+    margin-top: 20px;
+    z-index: 1; /* Garante que o cadastro esteja acima do footer */
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .input-group input {
+    width: calc(100% - 22px);
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .links {
+    margin-top: 10px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  

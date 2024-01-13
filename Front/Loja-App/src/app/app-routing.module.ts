@@ -4,17 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { ModClientesComponent } from './mod-clientes/mod-clientes.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { IndexComponent } from './index/index.component';
+import { LoginComponent } from './login/login.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 
-const routes: Routes = [
-  { path: 'mod-clientes', component: ModClientesComponent },
-  {path: 'clientes', component: ClientesComponent},
-  {path: '', component: IndexComponent}
-  ];
+
 
 @NgModule({
   declarations: [],
   exports: [ RouterModule ],
-  imports: [ RouterModule.forRoot(routes) ]
+  //imports: [ RouterModule.forRoot(routes) ]
 })
 export class AppRoutingModule { }
