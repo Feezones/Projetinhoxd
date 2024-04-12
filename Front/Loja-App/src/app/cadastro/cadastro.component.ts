@@ -24,6 +24,7 @@ export class CadastroComponent {
 
   cadastrarUsuario(): void {
     var resposta = (this.dataService.cadastrarUsuario(this.usuarioData))
+    console.log(this.usuarioData)
     console.log(resposta)
   }
 
